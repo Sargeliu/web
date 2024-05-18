@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:web/widgets/large_screen.dart';
+import 'package:web/widgets/small_screen.dart';
 
 class SiteLayout extends StatelessWidget {
   const SiteLayout({super.key});
@@ -12,17 +14,7 @@ class SiteLayout extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         ),
-        body: Row(children: [
-          Expanded(
-            child: Container(
-            color: Colors.red,
-          ),),
-          Expanded(
-            flex: 5,
-            child: Container(
-            color: Colors.blue,
-          ),),
-        ],),
+        body: SmallScreen(),
     );
   }
 }
