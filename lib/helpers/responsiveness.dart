@@ -18,8 +18,8 @@ class ResponsiveWidget extends StatelessWidget {
   const ResponsiveWidget({super.key, this.mediumScreen, required this.largeScreen, required this.smallScreen, this.customScreen});
 
   static bool isSmallScreen(BuildContext context) => 
-  MediaQuery.of(context).size.width < smallScreenSize;
- 
+  MediaQuery.of(context).size.width < mediumScreenSize;
+
   static bool isMediumScreen(BuildContext context) =>
   MediaQuery.of(context).size.width >= mediumScreenSize &&
   MediaQuery.of(context).size.width < largeScreenSize;
